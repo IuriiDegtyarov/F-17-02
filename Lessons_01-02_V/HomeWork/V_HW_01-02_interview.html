@@ -1,0 +1,142 @@
+<!DOCTYPE HTML5>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form</title>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<header>
+				<h1>Опрос о высшем образовании</h1>
+		</header>
+		<main>
+		<form>
+			<ol>
+				<li>
+					<p><i>Укажите свои данные.</i></p>
+					<p><label><i>Имя и фамилия</i> <input type="text"  placeholder="Имя и фамилия"/></label>
+					<input type="number" min="0" max="2020" placeholder="год"/>
+					<label><i>год рождения</i></label></p>
+				</li>
+				<li>
+					<em>Укажите результат полученный на школьном екзамене 
+					(где 2-min, 5-max оценка):</em>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th>2</th>
+								<th>3</th>
+								<th>4</th>
+								<th>5</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th><em>Математика</em></th>
+							<td><input type="radio" name="mathematics"/></td>
+							<td><input type="radio" name="mathematics"/></td>
+							<td><input type="radio" name="mathematics"/></td>
+							<td><input type="radio" name="mathematics"/></td>
+						</tr>
+						<tr>
+							<th><em>Физика</em></th>
+							<td><input type="radio" name="physics"/></td>
+							<td><input type="radio" name="physics"/></td>
+							<td><input type="radio" name="physics"/></td>
+							<td><input type="radio" name="physics"/></td>
+						</tr>
+						<tr>
+							<th><em>Украинский язык</em></th>
+							<td><input type="radio" name="Ukrainian language"/></td>
+							<td><input type="radio" name="Ukrainian language"/></td>
+							<td><input type="radio" name="Ukrainian language"/></td>
+							<td><input type="radio" name="Ukrainian language"/></td>
+						</tr>
+						<tr>
+							<th><em>Иностранный язык</em></th>
+							<td><input type="radio" name="foreign language"/></td>
+							<td><input type="radio" name="foreign language"/></td>
+							<td><input type="radio" name="foreign language"/></td>
+							<td><input type="radio" name="foreign language"/></td>
+						</tr>
+						</tbody>
+					</table>
+				</li>
+				<li>
+					<p><em>
+						Учились ли Вы в высших учебных заведениях?
+					</em></p>
+					<ul>
+						<li>
+							<label>
+								<input type="radio" name="radio">
+								Да
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" name="radio">
+								Нет
+							</label>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<P><em>
+						Какие предметы Вы сдавали при поступлении в высшее учебное заведение?
+					</em></P>
+					<ul>
+						<li>
+							<input id="chicken" type="checkbox"/>
+							<label for='chicken'>Математика</label>
+						</li>
+						<li>
+							<input id="place" type="checkbox"/>
+							<label for='chicken'>Физика</label>
+						</li>
+						<li>
+							<input id="more" type="checkbox"/>
+							<label for='more'>Украинский язык</label>
+						</li>
+						<li>
+							<input id="else" type="checkbox"/>
+							<label for='else'>Иностранный язык</label>
+						</li>
+						<li>
+							<label>Свой вариант</label>
+							<input type="text" placeholder=""/>
+						</li>
+					</ul>
+				</li> 
+				<li>
+					<p>
+						<i>Какую сумму (в гривнах) Вы готовы потратить/потратили на обучение?</i>
+					</p>
+					<input type="number" min="0" max="99000" placeholder="0"/>
+				</li>
+				<li>
+					<p>
+						<i>Готовы ли вы к дальнейшему повышению образования?</i>
+					</p>
+					<select>
+						<option selected="selected">Затрудняюсь ответить</option>
+						<option>Да</option>
+						<option>Нет</option>
+					</select>
+				</li>
+				<li>
+					<p>
+						<i>Оставте ваш email для связи с Вами.</i>
+					</p>
+					<input type="email" required="required"/>
+				</li>
+			</ol>
+			<button type="submit">Отправить</button>
+			</form>
+		</main>
+		<footer></footer>
+	</body>
+</html>

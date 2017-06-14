@@ -1,0 +1,586 @@
+<!DOCTYPE HTML5>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title>Tables - Home work</title>
+		<style>
+			section>table{
+				margin-left: 20px;
+				border-color: black;
+			}
+			table td>table{
+				border-color: black;
+			}
+			table + table{
+				margin-top: 20px
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Звичайна таблиця 3Х2</h1>
+			<table border="1">
+			<tr>
+    			<th>A</th>
+    			<th>B</th>
+    			<th>C</th>
+  			 </tr>
+  			 <tr>
+    			<th>D</th>
+    			<th>E</th>
+    			<th>F</th>
+  			 </tr>
+			</table>
+		</section>
+
+		<section>
+			<h1>Два приклади з ROWSPAN</h1>
+			<table border="1">
+    		<tr>
+    			<td>Комірка 1</td>
+    			<td rowspan="2">Комірка 2</td>
+    			<td bgcolor="#90ff90">Комірка 3</td>
+    		</tr>
+    		<tr>
+    			<td bgcolor="#ffff00">Комірка 4</td>
+    			<td>Комірка 5</td>
+    		</tr>
+			</table>
+			
+			<table border="1">
+    		<tr>
+    			<td rowspan="2">Комірка 1</td>
+    			<td>Комірка 2</td>
+    			<td >Комірка 3</td>
+    			<td>Комірка 4</td>
+    		</tr>
+    		<tr>
+    			<td>Комірка 5</td>
+    			<td>Комірка 6</td>
+    			<td>Комірка 7</td>
+    		</tr>
+			</table>
+		</section>
+
+		<section>
+			<h1>Приклад з COLSPAN</h1>
+			<table border="1">
+				<tr>
+					<td>Комiрка 1</td>
+					<td colspan="2">Комiрка 2</td>
+				</tr>
+				<tr>
+					<td>Комiрка 3</td>
+					<td>Комiрка 4</td>
+					<td>Комiрка 5</td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h1>Заголовки (&lt;TH&gt;)</h1>
+			<table border="1">
+				<thead>
+					<th>Заголовок1</th>
+					<th>Заголовок2</th>
+					<th>Заголовок3</th>
+				</thead>
+				<tbody>
+					<tr bgcolor="#ffff00">
+						<td>A</td>
+						<td>B</td>
+						<td>C</td>
+					</tr>
+					<tr>
+						<td>D</td>
+						<td>E</td>
+						<td>F</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h1>COLSPAN i заголовки</h1>
+			<table border="1">
+				<thead>
+					<th colspan="2">Заголовок1</th>
+					<th colspan="2">Заголовок2</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>A</td>
+						<td>B</td>
+						<td>C</td>
+						<td>D</td>
+					</tr>
+					<tr>
+						<td>E</td>
+						<td>F</td>
+						<td>G</td>
+						<td>H</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h1>Множиннi заголовки, COLSPAN</h1>
+			<table border="1">
+				<thead>
+					<tr>
+						<th colspan="2" bgcolor="#90ff90">Заголовок1</th>
+						<th colspan="2" bgcolor="#90ff90">Заголовок2</th>
+					</tr>
+					<tr>
+						<th bgcolor="#90ff90">Заголовок3</th>
+						<th bgcolor="#90ff90">Заголовок4</th>
+						<th bgcolor="#90ff90">Заголовок5</th>
+						<th bgcolor="#90ff90">Заголовок6</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td bgcolor="#90ff90">A</td>
+						<td bgcolor="#90ff90">B</td>
+						<td bgcolor="#90ff90">C</td>
+						<td bgcolor="#90ff90">D</td>
+					</tr>
+					<tr>
+						<td bgcolor="#90ff90">E</td>
+						<td bgcolor="#90ff90">F</td>
+						<td bgcolor="#90ff90">G</td>
+						<td bgcolor="#90ff90">H</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+			
+		<section>
+			<h1>Бiчнi заголовки</h1>
+			<table border="1">
+				<tr>
+					<th>Заголовок1</th>
+					<td>Комiрка 1</td>
+					<td>Комiрка 2</td>
+					<td>Комiрка 3</td>
+				</tr>
+				<tr>
+					<th>Заголовок2</th>
+					<td>Комiрка 4</td>
+					<td>Комiрка 5</td>
+					<td>Комiрка 6</td>
+				</tr>
+				<tr>
+					<th>Заголовок3</th>
+					<td>Комiрка 7</td>
+					<td>Комiрка 8</td>
+					<td>Комiрка 9</td>
+				</tr>
+			</table>
+		</section>
+				
+		<section>
+			<h1>Бiчнi заголовки, ROWSPAN</h1>
+			<table border="1">
+				<tr>
+					<th rowspan="2">Заголовок1</th>
+					<td>Комiрка 1</td>
+					<td>Комiрка 2</td>
+					<td>Комiрка 3</td>
+					<td>Комiрка 4</td>
+				</tr>
+				<tr>
+					<td>Комiрка 5</td>
+					<td>Комiрка 6</td>
+					<td>Комiрка 7</td>
+					<td>Комiрка 8</td>
+				</tr>
+				<tr>
+					<th>Заголовок2</th>
+					<td>Комiрка 9</td>
+					<td>Комiрка 10</td>
+					<td>Комiрка 11</td>
+					<td>Комiрка 12</td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h1>Приклад таблиці, яка використовує всі ці теги</h1>
+			<table border="1">
+				<thead>
+					<tr>
+						<th></th>
+						<th rowspan="2"></th>
+						<th colspan="2">Середня</th>
+					</tr>
+					<tr>
+						<th></th>
+						<th>Ріст</th>
+						<th>Вага</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th rowspan="2">Стать</th>
+						<th>чоловіки</th>
+						<td>1.9</td>
+						<td>0.003</td>
+					</tr>
+					<tr>
+						<th>жінки</th>
+						<td>1.7</td>
+						<td>0.002</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		
+		<section>
+			<h1>Використання ROWSPAN/COLSPAN</h1>
+			<table border="1">
+				<tr>
+					<td rowspan="2">ABCD</td>
+					<td>1234</td>
+					<td>2345</td>
+				</tr>
+				<tr>
+					<td>7583</td>
+					<td>4345</td>
+				</tr>
+				<tr>
+					<td>DFRE</td>
+					<td colspan="2" align="center">RUCE</td>
+				</tr>
+			</table>
+		</section>
+
+		<h1 style="text-align: center;">Вирівнювання, відступи, рамки</h1>
+
+		<section>
+			<h1>Таблиця без рамки</h1>
+			<table border="1">
+				<tr>
+					<td>Комiрка 1</td>
+					<td rowspan="2">Комiрка 2</td>
+					<td>Комiрка 3</td>
+				</tr>
+				<tr>
+					<td>Комiрка 4</td>
+					<td>Комiрка 5</td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h1>Таблиця з рамкою шириною 10</h1>
+			<table border="10">
+				<tr>
+					<td>Комiрка 1</td>
+					<td>Комiрка 2</td>
+				</tr>
+				<tr>
+					<td>Комiрка 3</td>
+					<td>Комiрка 4</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section>
+			<h1>CELLPADDING i CELLSPACING</h1>
+			<table border="1"  cellspacing="0" cellpadding="7">
+				<tr>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+				</tr>
+				<tr>
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+				</tr>
+			</table>
+
+			<table border="1"  cellspacing="4" cellpadding="0">
+				<tr>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+				</tr>
+				<tr>
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+				</tr>
+			</table>
+
+			<table border="1"  cellspacing="7" cellpadding="4">
+				<tr>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+				</tr>
+				<tr>
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+				</tr>
+			</table>
+
+			<table border="4"  cellspacing="4" cellpadding="7">
+				<tr>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+				</tr>
+				<tr>
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+				</tr>
+			</table>
+		</section>
+
+		<h1 style="text-align: center;">ВИРІВНЮВАННЯ, ЗАГОЛОВКИ ТА ПІДТАБЛИЦІ</h1>
+
+		<section>
+			<h1>Множинні рядки в таблиці</h1>
+			<table border="1">
+				<thead>
+					<th>Січень</th>
+					<th>Лютий</th>
+					<th>Березень</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Це комірка1</td>
+						<td>Комірка2</td>
+						<td>Інша комірка,<br/> комірка3</td>
+					</tr>
+					<tr>
+						<td>комірка4</td>
+						<td>Ще одна,<br/> комірка5</td>
+						<td>комірка6</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h1>ALIGN=LEFT|RIGHT|CENTER</h1>
+			<p>Може застосовуватися до окремої комірки або всього рядка</p>
+			<table border="1">
+				<thead>
+					<th>Січень</th>
+					<th>Лютий</th>
+					<th>Березень</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td align="center">Все по<br/> центру</td>
+						<td>Комірка2</td>
+						<td>Інша комірка,<br/> комірка3</td>
+					</tr>
+					<tr>
+						<td align="right">По правому</td>
+						<td align="center">По центру</td>
+						<td>За замовчання,<br/> по лівому</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h1>VALIGN=TOP|BOTTOM|MIDDLE</h1>
+			<p>Може застосовуватися до окремої комірки або всього рядка</p>
+			<table border="1">
+				<thead>
+					<th>Січень</th>
+					<th>Лютий</th>
+					<th>Березень</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td valign="top" ">По верхньому</td>
+						<td>Комірка2</td>
+						<td>Інша комірка,<br/> комірка3</td>
+					</tr>
+					<tr>
+						<td valign="top" ">По верхньому</td>
+						<td valign="bottom">По нижньому</td>
+						<td valign="middle">За замовчання,<br/> по центру</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h1>CAPTION=TOP|BOTTOM</h1>
+			<table border="1" style="border-top: none;">
+				<caption style="border:1px solid black;border-bottom: none;">Верхній заголовок</caption>
+				<thead>
+					<th>Січень</th>
+					<th>Лютий</th>
+					<th>Березень</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Це комірка1</td>
+						<td>Комірка2</td>
+						<td>Інша комірка,<br/> комірка3</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table border="1" style="border-bottom: none;">
+			<caption align="bottom" style="border:1px solid black;border-top: none;">Нижній заголовок</caption>
+				<thead style="border-bottom: 1px solid black;">
+					<th>Січень</th>
+					<th>Лютий</th>
+					<th>Березень</th>
+				</thead>
+				<tbody style="border-bottom: 1px solid black;">
+					<tr>
+						<td>Це комірка1</td>
+						<td>Комірка2</td>
+						<td>Інша комірка,<br/> комірка3</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h1>Вкладені таблиці: таблиця АВСД всередині таблиці 123456</h1>
+			<table border="1">
+				<tr>
+					<td>1111</td>
+					<td>2222</td>
+					<td>3333
+						<table border="1">
+							<tr>
+								<td>AAAA</td>
+								<td>SSSS</td>
+							</tr>
+							<tr>
+								<td>DDDD</td>
+								<td>FFFF</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>4444</td>
+					<td>5555</td>
+					<td>6666</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section>
+			<h1>Завдання ширини таблиці ШИРИНА 50%</h1>
+			<table border="1" width="50%">
+				<tr>
+					<td>Width=50%</td>
+					<td>Width=50%</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</table>
+
+			<table border="1">
+				<tr>
+					<td>Комірка залежить від розміру елемента</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</table>
+
+			<table border="1" style="width: calc(100% - 20px);">
+				<tr>
+					<td>Width=100%</td>
+					<td>Це комірка 2</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section>
+			<h1>Центрування таблиці на сторінці</h1>
+			<table border="1" width="50%" style="margin: 0 auto;">
+				<tr align="center">
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+				</tr>
+				<tr align="center">
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section>
+			<h1>Ширина таблиці і вкладені таблиці</h1>
+			<table border="1" width="50%">
+				<tr>
+					<td>Комірка 1</td>
+					<td>Комірка 2</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="1" width="100%">
+							<td>Комірка A</td>
+							<td>Комірка B</td>
+						</table>
+					</td>
+					<td>Комірка 4</td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h1>HEIGHT=15%</h1>
+			<table border="1">
+				<tr>
+					<td height="15%">HEIGHT=15%</td>
+					<td>Комірка 2</td>
+				</tr>
+				<tr>
+					<td>Комірка 3</td>
+					<td>Комірка 4</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section>
+			<h1>HTML таблиця розташована всередині комірки</h1>
+			<table border="2" cellspacing="0" width="20%" cellpadding="0" bgcolor="#A9A9A9">
+				<tr>
+					<td></td>
+					<td width="50%">
+						<table border="1" cellpadding="10" bgcolor="white" style="margin: 5px 0;">
+							<tr>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</body>
+</html>
