@@ -1,0 +1,62 @@
+	<script>
+		// function Humen(name, age, gender, profession){
+		// 	this.name = name;
+		// 	this.age = age;
+		// 	this.gender = gender;
+		// 	this.profession = profession;
+		// 	this.hasHed = true;
+		// 	this.speed = 0;
+		// }
+
+		// Humen.prototype.walk = function(){
+		// 	return this.speed 500;
+		// }
+		// Humen.prototype.walk = function(){
+		// 	return this.speed 0;
+		// }
+
+		class Animal{
+			constructor(alive){
+				this.isAlive = true;
+			}
+			kill(){
+				this.alive = false;
+			}
+			isAlive(){
+				return this.alive;
+			}
+		}
+
+		export class Humen2 extends Animal{
+			constructor(name, age, gender, profession, hasHed, speed){
+			this(true);
+			this.name = name;
+			this.age = age;
+			this.gender = gender;
+			this.profession = profession;
+			this.hasHed = true;
+			this.speed = 0;
+			}
+		}		
+		walk() {
+			this.speed = 500;
+		}
+		stop() {
+			this.speed = 0;
+		}
+
+		let person = new Humen2('ivan', 24, 'men', 'front-end develeper')
+			console.log(person)
+
+		// let person = new Humen('ivan', 24, 'men', 'front-end develeper');
+		// let person2 = new Humen2('ivan', 24, 'men', 'front-end develeper');
+
+		// person.walk();
+		// console.log(person.speed);
+
+		// person.stop();
+		// console.log(person.speed);
+
+		// console.log(person);
+		// console.log(person2);
+	</script>
