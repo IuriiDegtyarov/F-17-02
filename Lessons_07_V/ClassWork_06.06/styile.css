@@ -1,0 +1,61 @@
+body{
+	background-color: azure;
+	width: 70%;
+	margin: 0 auto; 
+}
+div{
+	margin: 40px 0;
+	width: 100%;
+}
+span{
+	text-decoration: line-through;
+}
+a{
+	text-decoration: none;
+}
+img{
+    border: 1px solid #90ee90;
+    width: inherit;
+}
+.center{
+	text-align: center;
+}
+.active:active{
+	color: brown;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.aling-left{
+	height: 30px;
+	text-align: left;
+}
+.hover:hover{
+	border: 3px dotted green;
+	text-decoration: underline;
+	color: brown;
+	display: block;
+	width: 100px;
+    height: 30px;
+    line-height: 30px; 
+}
+.aling-right{
+	text-align: right;
+}
+.visited:visited{
+	font-weight: 70%;
+    font-style: italic;
+    color: firebrick
+}
+.back-attachment{
+	padding: 50px 0;
+    background-image: url('image/data.jpg');
+    height: 500px;
+    background-attachment: fixed;
+}
+.paregraph{
+	text-indent: 15px;
+    margin-top: 120px;
+    background-color: rgba(218,70,58,0.9);
+    color: #fff;
+}
