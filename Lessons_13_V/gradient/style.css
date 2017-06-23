@@ -1,0 +1,75 @@
+/*.gradient {
+    background: #fefcea; 
+    background: linear-gradient(to top, #fefcea, #f1da36);
+    padding: 10px;
+    border: 1px solid #333;
+}
+*/
+/* body { background: url(images/celtic1.png); }
+   div {
+    background-image: linear-gradient(to top, rgba(30,87,153,0), rgba(30,87,153,0.8), rgba(30,87,153,1),
+                      rgba(30,87,153,1), rgba(41,137,216,1), rgba(30,87,153,1), rgba(30,87,153,1),
+                      rgba(30,87,153,0.8),rgba(30,87,153,0));
+    color: #fff; padding: 10px;
+   }*/
+   div{
+   	width: 250px;
+   	height: 200px;
+    /*background-color: #b2b2b2;
+  	background-color: rgba(0, 0, 0, .3);*/
+  	/*background-image: -webkit-linear-gradient([0deg | top,] <цвет> [, <цвет>]*)*/
+  /*	background: #e2e2e2;
+    background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+    background: -webkit-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: -o-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: -ms-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);*/
+    background: -webkit-linear-gradient(left, #f00 0%,#f0c 50%,#30f 61%,#0f2 71%,#ef0 100%);
+   }
+   .ww{
+   	width: 250px;
+   	height: 200px;
+    /*background-color: #b2b2b2;
+  	background-color: rgba(0, 0, 0, .3);*/
+  	/*background-image: -webkit-linear-gradient([0deg | top,] <цвет> [, <цвет>]*)*/
+  /*	background: #e2e2e2;
+    background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+    background: -webkit-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: -o-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: -ms-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);*/
+    background: -webkit-linear-gradient(top, #f00 0%,  #00b 50%, #0d0 100%);
+   }
+
+   .zz{
+	width: 250px;
+   	height: 200px;
+   	/*background: #feffff;
+    background: -moz-radial-gradient(center, ellipse cover, #feffff 0%, #d2ebf9 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #feffff 0%,#d2ebf9 100%);
+    background: -o-radial-gradient(center, ellipse cover, #feffff 0%,#d2ebf9 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #feffff 0%,#d2ebf9 100%);
+    background: radial-gradient(center, ellipse cover, #feffff 0%,#d2ebf9 100%);
+    padding: 10px;*/
+
+   /* Позиция точки пишется аналогично значениям свойства background-position с помощью ключевых слов или доступных единиц измерения вроде пикселов или процентов; ниже приведены возможные сочетания.
+	top left = left top = 0% 0% (в левом верхнем углу);
+	top = top center = center top = 50% 0% (по центру вверху);
+	right top = top right = 100% 0% (в правом верхнем углу);
+	left = left center = center left = 0% 50% (по левому краю и по центру);
+	center = center center = 50% 50% (по центру) — это значение по умолчанию;
+	right = right center = center right = 100% 50% (по правому краю и по центру);
+	bottom left = left bottom = 0% 100% (в левом нижнем углу);
+	bottom = bottom center = center bottom = 50% 100% (по центру внизу);
+	bottom right = right bottom = 100% 100% (в правом нижнем углу).*/
+
+	background: -webkit-radial-gradient(bottom left, ellipse cover, #f00 0%,#30f 50%, #ef0 100%);
+   }
+
+   .rr{
+   	background: linear-gradient(to top right, #f00, #f0c, #30f, #0f2, #ef0);
+   }
+
+   .ee{
+   	background: linear-gradient(-45%deg, #f00, #f0c, #30f, #0f2, #ef0);
+   }
