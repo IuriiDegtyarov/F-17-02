@@ -1,0 +1,1 @@
+function test(){return 4}var a=test(),a="b";

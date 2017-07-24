@@ -1,0 +1,17 @@
+header {
+    width: 80%;
+    margin: 0 auto;
+    background: red;
+    color: black;
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
