@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Grid</title>
+
+<style type="text/css">
+	/*.grid-container{
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-rows: 50px 50px;		
+		grid-template-columns: repead(2, 100px) min-content 150px 0.5fr;
+		grid-template-columns: 100px 1.2fr 150px 0.5fr;
+		width: 700px;
+		grid-template-areas: "yellow grid red"
+		 "grey blue width"
+		  "violet . ." ;
+
+	}
+	.grid-element1{
+		background-color: yellow; 
+		grid-area: yellow;
+	}
+	.grid-element2{
+		background-color: green;
+		grid-area: .; 
+	}
+	.grid-element3{
+		background-color: blue; 
+		grid-area: red;
+	}
+	.grid-element4{
+		background-color: grey; 
+		grid-area: grey;
+	}
+	.grid-element5{
+		background-color: white;
+		grid-area: blue; 
+	}
+	.grid-element6{
+		background-color: red; 
+		grid-area: width;
+	}
+	.grid-element7{
+		background-color: violet;
+		grid-area: violet; 
+	}*/
+
+	
+	#myCanvas{
+		border: 1px solid green;
+/*		margin:50px auto;
+		background-color: rgb(196, 213, 135);*/
+	}
+
+
+</style>
+
+</head>
+<body>
+
+	<!-- <div class="grid-container">
+		<div class="grid-element1">Loren ipsum1</div>
+		<div class="grid-element2">Loren ipsum2</div>
+		<div class="grid-element3">Loren ipsum3</div>
+		<div class="grid-element4">Loren ipsum4</div>
+		<div class="grid-element5">Loren ipsum5</div>
+		<div class="grid-element6">Loren ipsum6</div>
+		<div class="grid-element7">Loren ipsum7</div>								
+	</div> -->
+
+	<canvas id="myCanvas" width="800px" height="456	50px"></canvas>
+
+<!-- 	<script>
+		window.onload = function(){
+			var canvas = document.getElementById('myCanvas');
+			var context = canvas.getContext('2d');
+
+			first line
+			context.beginPath();
+			context.moveTo(25,25);
+			context.lineTo(150,175);
+			context.lineWidth = 7;
+			context.strokeStyle = "#42d4f4";
+			context.lineCap = "square";
+			context.stroke();
+		
+			second line
+			context.beginPath();
+			context.moveTo(180,195);
+			context.lineTo(270,290);
+			context.lineWidth = 15;
+			context.strokeStyle = "#bef441";
+			context.lineCap = "round";
+			context.stroke();
+ 
+			rect
+			context.beginPath();
+			context.filleStyle = "#f4c141";
+			context.fillRect(100,300, 60,60);
+			context.strokeStyle = "#bef441";
+			context.strokeRect(160, 30, 40,40);
+			context.clearRect(170,220, 30,30);
+
+			circle
+			context.beginPath();
+			context.arc(300, 150, 50, 0, 2*Math.PI, false);
+			context.lineWidth = 2;
+			context.strokeStyle = "#41eef4";
+			context.stroke();
+
+			quadraticCurve
+			context.beginPath();
+			context.moveTo(430, 30);
+			context.quadraticCurveTo(400, 70, 440, 110);
+			context.strokeStyle = "#aaa";
+			context.stroke();
+
+			//bizierCurve
+			context.beginPath();
+			context.moveTo(430, 150);
+			context.bizierCurveTo(400, 210, 470, 190, 360, 170);
+			context.stroke();
+
+		}
+	</script> -->
+
+	<script>
+		window.onload = function(){
+			var canvas = document.getElementById('myCanvas');
+			var context = canvas.getContext('2d');
+
+			//circle
+			context.beginPath();
+			context.arc(400, 220, 150, 0, 2*Math.PI, false);
+			context.lineWidth = 5;
+			context.strokeStyle = "#000";
+			context.stroke();
+			context.fillStyle = "#7fffd4";
+			context.fill();
+
+			//rect
+			context.beginPath();
+			context.lineWidth = 2;
+			context.stroke();
+			context.strokeRect(310, 130, 180, 180);
+
+			//fill rect
+			context.beginPath();
+			context.fillStyle ="#b5f441";
+			context.fillRect(340, 160, 120, 120);
+
+			//clear rect
+			context.beginPath();
+			context.clearRect(370, 190, 60, 60);
+
+			//bizierCurve
+			context.beginPath();
+			context.moveTo(310,310);
+			context.bezierCurveTo(320,210,440,280,490,130);
+			context.lineWidth = 3;
+			context.stroke();
+
+		}
+	</script>
+
+</body>
+</html>
